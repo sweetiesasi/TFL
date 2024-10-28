@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a4a1d448-cebb-440c-9046-7fbbee403981" name="@Sasitorns-MacBook-Air 2024-10-28 09:41:08" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-10-28T09:41:08.2074130+07:00" queuing="2024-10-28T09:41:08.2074130+07:00" start="2024-10-28T09:41:06.5050480+07:00" finish="2024-10-28T09:42:58.2790350+07:00" />
+  <TestSettings name="default" id="9629d070-3fed-419a-a8c4-a7cccd063655">
+    <Deployment runDeploymentRoot="_Sasitorns-MacBook-Air_2024-10-28_09_41_08" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="0dd37ef1-1c41-46ef-a9bf-d06f3d5b4d2a" testId="f01739a5-6c07-bd3a-0b69-99221d206812" testName="PlanAJourneyWithNoLocations" computerName="Sasitorns-MacBook-Air" duration="00:00:04.2304570" startTime="2024-10-28T09:41:09.8676400+07:00" endTime="2024-10-28T09:41:14.0980460+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0dd37ef1-1c41-46ef-a9bf-d06f3d5b4d2a">
+      <Output>
+        <StdOut>Given I am on the TfL Journey Planner page
+Accepted cookies on the TfL Journey Planner page.
+Navigation to the TfL Journey Planner page completed.
+-&gt; done: NavigationSteps.GivenIAmOnTheTfLJourneyPlannerPage() (4.1s)
+When I click the "plan-journey-button" button
+Clicked the 'plan-journey-button' button.
+-&gt; done: ClickButtonSteps.WhenIClickTheButton("plan-journey-button") (0.0s)
+Then Validate the "InputFrom" is invalid with error
+Error message displayed for field 'InputFrom': The From field is required.
+Error icon displayed alongside message for field 'InputFrom'.
+-&gt; done: InputJourneySteps.ThenValidateTheIsInvalidWithError("InputFrom") (0.0s)
+Then Validate the "InputTo" is invalid with error
+Error message displayed for field 'InputTo': The To field is required.
+Error icon displayed alongside message for field 'InputTo'.
+-&gt; done: InputJourneySteps.ThenValidateTheIsInvalidWithError("InputTo") (0.0s)
+Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff685889-8b6c-4306-9d25-250de985671c" testId="8a2a4cac-7f7d-48fa-e4af-4d77f39d710a" testName="PlanAJourneyUsingDifferentModes" computerName="Sasitorns-MacBook-Air" duration="00:00:00.6161920" startTime="2024-10-28T09:41:08.0295730+07:00" endTime="2024-10-28T09:41:08.6457570+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff685889-8b6c-4306-9d25-250de985671c">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2be540c3-dd1e-43e5-b63e-9adacc6c4e33" testId="cb527fac-4933-48d4-0335-cff6171d51a3" testName="PlanAValidJourneyFromLeicesterSquareUndergroundStationToCoventGardenUndergroundStation" computerName="Sasitorns-MacBook-Air" duration="00:01:24.8816870" startTime="2024-10-28T09:41:30.0117590+07:00" endTime="2024-10-28T09:42:54.8924240+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2be540c3-dd1e-43e5-b63e-9adacc6c4e33">
+      <Output>
+        <StdOut>Given I am on the TfL Journey Planner page
+Accepted cookies on the TfL Journey Planner page.
+Navigation to the TfL Journey Planner page completed.
+-&gt; done: NavigationSteps.GivenIAmOnTheTfLJourneyPlannerPage() (3.2s)
+When I type "Leicester Square" in the "InputFrom" field
+Entered 'Leicester Square' in the 'InputFrom' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("Leicester Square", "InputFrom") (2.0s)
+And I select "Leicester Square Underground Station" from the suggestions
+'Leicester Square Underground Station' successfully selected from suggestions.
+-&gt; done: AutocompleteSteps.WhenISelectFromTheSuggestions("Leicester Square ...") (1.2s)
+Then It should show "Leicester Square Underground Station" in the "InputFrom" field
+Correct value 'Leicester Square Underground Station' is displayed in the 'InputFrom' field.
+-&gt; done: InputJourneySteps.ThenItShouldShowInField("Leicester Square ...", "InputFrom") (0.0s)
+When I type "Covent Garden U" in the "InputTo" field
+Entered 'Covent Garden U' in the 'InputTo' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("Covent Garden U", "InputTo") (1.9s)
+And I select "Covent Garden Underground Station" from the suggestions
+'Covent Garden Underground Station' successfully selected from suggestions.
+-&gt; done: AutocompleteSteps.WhenISelectFromTheSuggestions("Covent Garden Und...") (0.6s)
+Then It should show "Covent Garden Underground Station" in the "InputTo" field
+Correct value 'Covent Garden Underground Station' is displayed in the 'InputTo' field.
+-&gt; done: InputJourneySteps.ThenItShouldShowInField("Covent Garden Und...", "InputTo") (0.0s)
+When I click the "plan-journey-button" button
+Clicked the 'plan-journey-button' button.
+-&gt; done: ClickButtonSteps.WhenIClickTheButton("plan-journey-button") (0.5s)
+Then I should see the system fetching results displayed
+System fetching results displayed.
+Results fetching completed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheSystemFetchingResultsDisplayed() (17.8s)
+Then I should see the results for "Walking and cycling" displayed
+'Walking and cycling' results header is correctly displayed.
+Journey results for 'Walking and cycling' are successfully displayed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheResultsForDisplayed("Walking and cycling") (0.0s)
+Then I should see "Cycling" time "2" mins
+Correct Cycling time '2' is displayed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTimeMins("Cycling", "2") (0.0s)
+Then I should see "Walking" time "9" mins
+Correct Walking time '9' is displayed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTimeMins("Walking", "9") (0.0s)
+When I click the "Edit preferences" link
+Clicked the 'Edit preferences' button.
+-&gt; done: EditPreferencesSteps.WhenIClickTheLink("Edit preferences") (0.0s)
+And I select routes with least walking
+Label for 'Routes with least walking' is visible.
+Clicked the label for 'Routes with least walking' as a fallback.
+-&gt; done: EditPreferencesSteps.WhenISelectRoutesWithLeastWalking() (1.6s)
+And I update Journey
+Direct click on 'Update journey' button failed. Attempting tab navigation...
+Found the 'Update journey' button using Tab navigation.
+Clicked the 'Update journey' button using Tab navigation.
+-&gt; done: EditPreferencesSteps.WhenIUpdateJourney() (16.6s)
+Then I should see the system fetching results displayed
+System fetching results displayed.
+Results fetching completed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheSystemFetchingResultsDisplayed() (18.3s)
+Then Validate the journey time "11" mins
+Total journey time displayed: Total time:
+20mins mins
+Mismatch in total journey time. Expected: '11' mins, but got: 'Total time:
+20mins' mins.
+-&gt; done: JourneyResultsSteps.ThenValidateTheJourneyTimeMins("11") (0.0s)
+When I click on "View details" button
+Clicked the 'View details' button.
+-&gt; done: ViewDetailsSteps.WhenIClickOnButton("View details") (0.0s)
+Then I should see access information for "Covent Garden Underground Station" including 'Up stairs, Up lift, Level walkway'
+-&gt; error: Timed out while verifying access information for 'Covent Garden Underground Station'. (20.6s)
+Closed the Chrome browser after scenario execution.</StdOut>
+        <ErrorInfo>
+          <Message>System.Exception : Timed out while verifying access information for 'Covent Garden Underground Station'.</Message>
+          <StackTrace>   at ViewDetailsSteps.ThenIShouldSeeAccessInformationFor(String stationName, String expectedAccess) in /Users/sasitorn/Test TFL/TestTLF1/specs/ViewDetailSteps.cs:line 128
+   at InvokeStub_Action`3.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at TestTLF1.Features.TFLFunctionalityFeature.ScenarioCleanup()
+   at TestTLF1.Features.TFLFunctionalityFeature.PlanAValidJourneyFromLeicesterSquareUndergroundStationToCoventGardenUndergroundStation() in /Users/sasitorn/Test TFL/TestTLF1/features/TFLPlanAJourney.feature:line 22
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="68267e53-9b5e-4376-b16f-6b43687f0582" testId="255a37f7-a57d-56bb-337d-3af9ad38f174" testName="PlanAnInvalidJourney" computerName="Sasitorns-MacBook-Air" duration="00:00:15.9137050" startTime="2024-10-28T09:41:14.0981860+07:00" endTime="2024-10-28T09:41:30.0117000+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="68267e53-9b5e-4376-b16f-6b43687f0582">
+      <Output>
+        <StdOut>Given I am on the TfL Journey Planner page
+Accepted cookies on the TfL Journey Planner page.
+Navigation to the TfL Journey Planner page completed.
+-&gt; done: NavigationSteps.GivenIAmOnTheTfLJourneyPlannerPage() (2.4s)
+When I type "@#$@$@@$" in the "InputFrom" field
+Entered '@#$@$@@$' in the 'InputFrom' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("@#$@$@@$", "InputFrom") (1.0s)
+And I type "@#$#@$#@$$" in the "InputTo" field
+Entered '@#$#@$#@$$' in the 'InputTo' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("@#$#@$#@$$", "InputTo") (1.3s)
+When I click the "plan-journey-button" button
+Clicked the 'plan-journey-button' button.
+-&gt; done: ClickButtonSteps.WhenIClickTheButton("plan-journey-button") (0.5s)
+Then I should see the system fetching results displayed
+System fetching results displayed.
+Results fetching completed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheSystemFetchingResultsDisplayed() (10.6s)
+Then I should see an error indicating that the journey cannot be planned
+Correct error message displayed indicating that the journey cannot be planned.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeAnErrorIndicatingThatTheJourneyCannotBePlanned() (0.0s)
+Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e2e9c25-f9e4-417b-9e95-9bd90c2a23ad" testId="2ee0d601-1f41-b1c4-1a8d-b817f0f92c09" testName="PlanAJourneyUsingDifferentPreferences" computerName="Sasitorns-MacBook-Air" duration="00:00:00.6054340" startTime="2024-10-28T09:41:08.6475540+07:00" endTime="2024-10-28T09:41:09.2529800+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e2e9c25-f9e4-417b-9e95-9bd90c2a23ad">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8a8f3b2e-6dca-42ac-99b6-d7fd6eeb0183" testId="32307812-4889-fbdb-2867-f819c9ba8ccf" testName="PlanAJourneyAndVerifyTheAccessOptions" computerName="Sasitorns-MacBook-Air" duration="00:00:00.6258070" startTime="2024-10-28T09:41:06.8137170+07:00" endTime="2024-10-28T09:41:07.4394870+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a8f3b2e-6dca-42ac-99b6-d7fd6eeb0183">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="20af6eaf-1dcc-4352-9ad9-429a834e3341" testId="d97b65b5-1471-040a-7efb-9881cc98a3de" testName="PlanAJourneyBetweenTwoStationsThatAreExtremelyCloseToEachOther" computerName="Sasitorns-MacBook-Air" duration="00:00:00.5890240" startTime="2024-10-28T09:41:07.4405130+07:00" endTime="2024-10-28T09:41:08.0295300+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20af6eaf-1dcc-4352-9ad9-429a834e3341">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="45b233bd-eb9d-46ac-b7e2-0844786e2405" testId="bb7c6ab0-31c0-f31b-8368-d6454d047ab5" testName="TestThePlannerOnDifferentBrowsersAndDevices" computerName="Sasitorns-MacBook-Air" duration="00:00:00.5749339" startTime="2024-10-28T09:42:56.4365830+07:00" endTime="2024-10-28T09:42:57.0115100+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45b233bd-eb9d-46ac-b7e2-0844786e2405">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae2cb839-722d-4c21-820e-6db2b4b23af1" testId="ffe11432-5d10-d966-c550-3a43c31b5636" testName="PlanAJourneyUsingHireBike" computerName="Sasitorns-MacBook-Air" duration="00:00:00.6145050" startTime="2024-10-28T09:41:09.2531080+07:00" endTime="2024-10-28T09:41:09.8676050+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae2cb839-722d-4c21-820e-6db2b4b23af1">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2cb76402-c33e-4d37-ab28-792e71f38e06" testId="cf46b017-2a44-dec4-54a2-e1ab723a2f67" testName="TestThePlannerOnDifferentNetworkConditionsE_G_3G4G5GWi_Fi" computerName="Sasitorns-MacBook-Air" duration="00:00:00.6172330" startTime="2024-10-28T09:42:57.0115550+07:00" endTime="2024-10-28T09:42:57.6287790+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cb76402-c33e-4d37-ab28-792e71f38e06">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="60c17a4e-4831-40d1-a73b-466a7ad8fe20" testId="194c5b20-70ed-5f52-1505-36f142da07cf" testName="SimulateAServerFailureDuringJourneyPlanning" computerName="Sasitorns-MacBook-Air" duration="00:00:00.6386680" startTime="2024-10-28T09:42:55.7978780+07:00" endTime="2024-10-28T09:42:56.4365380+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60c17a4e-4831-40d1-a73b-466a7ad8fe20">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eb2c3305-37a0-4e6e-9598-18b2ecc44cb5" testId="7b09795f-d9a3-d1ee-dac5-b3241ef2a5fc" testName="SimulateAHighNumberOfConcurrentUsersAccessingTheJourneyPlanner" computerName="Sasitorns-MacBook-Air" duration="00:00:00.9051910" startTime="2024-10-28T09:42:54.8926160+07:00" endTime="2024-10-28T09:42:55.7977940+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb2c3305-37a0-4e6e-9598-18b2ecc44cb5">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="64c3c24b-e866-421e-a74e-25c1b68e3661" testId="338eda75-a843-c70f-d463-ae2015c69138" testName="ValidateTheStreetView" computerName="Sasitorns-MacBook-Air" duration="00:00:00.5504340" startTime="2024-10-28T09:42:57.6288260+07:00" endTime="2024-10-28T09:42:58.1792520+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64c3c24b-e866-421e-a74e-25c1b68e3661">
+      <Output>
+        <StdOut>Closed the Chrome browser after scenario execution.</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PlanAValidJourneyFromLeicesterSquareUndergroundStationToCoventGardenUndergroundStation" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="cb527fac-4933-48d4-0335-cff6171d51a3">
+      <Execution id="2be540c3-dd1e-43e5-b63e-9adacc6c4e33" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAValidJourneyFromLeicesterSquareUndergroundStationToCoventGardenUndergroundStation" />
+    </UnitTest>
+    <UnitTest name="PlanAJourneyAndVerifyTheAccessOptions" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="32307812-4889-fbdb-2867-f819c9ba8ccf">
+      <Execution id="8a8f3b2e-6dca-42ac-99b6-d7fd6eeb0183" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAJourneyAndVerifyTheAccessOptions" />
+    </UnitTest>
+    <UnitTest name="TestThePlannerOnDifferentNetworkConditionsE_G_3G4G5GWi_Fi" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="cf46b017-2a44-dec4-54a2-e1ab723a2f67">
+      <Execution id="2cb76402-c33e-4d37-ab28-792e71f38e06" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="TestThePlannerOnDifferentNetworkConditionsE_G_3G4G5GWi_Fi" />
+    </UnitTest>
+    <UnitTest name="ValidateTheStreetView" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="338eda75-a843-c70f-d463-ae2015c69138">
+      <Execution id="64c3c24b-e866-421e-a74e-25c1b68e3661" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="ValidateTheStreetView" />
+    </UnitTest>
+    <UnitTest name="SimulateAServerFailureDuringJourneyPlanning" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="194c5b20-70ed-5f52-1505-36f142da07cf">
+      <Execution id="60c17a4e-4831-40d1-a73b-466a7ad8fe20" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="SimulateAServerFailureDuringJourneyPlanning" />
+    </UnitTest>
+    <UnitTest name="PlanAJourneyUsingDifferentModes" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="8a2a4cac-7f7d-48fa-e4af-4d77f39d710a">
+      <Execution id="ff685889-8b6c-4306-9d25-250de985671c" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAJourneyUsingDifferentModes" />
+    </UnitTest>
+    <UnitTest name="PlanAJourneyUsingHireBike" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="ffe11432-5d10-d966-c550-3a43c31b5636">
+      <Execution id="ae2cb839-722d-4c21-820e-6db2b4b23af1" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAJourneyUsingHireBike" />
+    </UnitTest>
+    <UnitTest name="SimulateAHighNumberOfConcurrentUsersAccessingTheJourneyPlanner" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="7b09795f-d9a3-d1ee-dac5-b3241ef2a5fc">
+      <Execution id="eb2c3305-37a0-4e6e-9598-18b2ecc44cb5" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="SimulateAHighNumberOfConcurrentUsersAccessingTheJourneyPlanner" />
+    </UnitTest>
+    <UnitTest name="TestThePlannerOnDifferentBrowsersAndDevices" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="bb7c6ab0-31c0-f31b-8368-d6454d047ab5">
+      <Execution id="45b233bd-eb9d-46ac-b7e2-0844786e2405" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="TestThePlannerOnDifferentBrowsersAndDevices" />
+    </UnitTest>
+    <UnitTest name="PlanAJourneyBetweenTwoStationsThatAreExtremelyCloseToEachOther" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="d97b65b5-1471-040a-7efb-9881cc98a3de">
+      <Execution id="20af6eaf-1dcc-4352-9ad9-429a834e3341" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAJourneyBetweenTwoStationsThatAreExtremelyCloseToEachOther" />
+    </UnitTest>
+    <UnitTest name="PlanAJourneyWithNoLocations" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="f01739a5-6c07-bd3a-0b69-99221d206812">
+      <Execution id="0dd37ef1-1c41-46ef-a9bf-d06f3d5b4d2a" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAJourneyWithNoLocations" />
+    </UnitTest>
+    <UnitTest name="PlanAJourneyUsingDifferentPreferences" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="2ee0d601-1f41-b1c4-1a8d-b817f0f92c09">
+      <Execution id="3e2e9c25-f9e4-417b-9e95-9bd90c2a23ad" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAJourneyUsingDifferentPreferences" />
+    </UnitTest>
+    <UnitTest name="PlanAnInvalidJourney" storage="/users/sasitorn/test tfl/testtlf1/bin/debug/net8.0/testtlf1.dll" id="255a37f7-a57d-56bb-337d-3af9ad38f174">
+      <Execution id="68267e53-9b5e-4376-b16f-6b43687f0582" />
+      <TestMethod codeBase="/Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll" adapterTypeName="executor://nunit3testexecutor/" className="TestTLF1.Features.TFLFunctionalityFeature" name="PlanAnInvalidJourney" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="f01739a5-6c07-bd3a-0b69-99221d206812" executionId="0dd37ef1-1c41-46ef-a9bf-d06f3d5b4d2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a2a4cac-7f7d-48fa-e4af-4d77f39d710a" executionId="ff685889-8b6c-4306-9d25-250de985671c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb527fac-4933-48d4-0335-cff6171d51a3" executionId="2be540c3-dd1e-43e5-b63e-9adacc6c4e33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="255a37f7-a57d-56bb-337d-3af9ad38f174" executionId="68267e53-9b5e-4376-b16f-6b43687f0582" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ee0d601-1f41-b1c4-1a8d-b817f0f92c09" executionId="3e2e9c25-f9e4-417b-9e95-9bd90c2a23ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32307812-4889-fbdb-2867-f819c9ba8ccf" executionId="8a8f3b2e-6dca-42ac-99b6-d7fd6eeb0183" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d97b65b5-1471-040a-7efb-9881cc98a3de" executionId="20af6eaf-1dcc-4352-9ad9-429a834e3341" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb7c6ab0-31c0-f31b-8368-d6454d047ab5" executionId="45b233bd-eb9d-46ac-b7e2-0844786e2405" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffe11432-5d10-d966-c550-3a43c31b5636" executionId="ae2cb839-722d-4c21-820e-6db2b4b23af1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf46b017-2a44-dec4-54a2-e1ab723a2f67" executionId="2cb76402-c33e-4d37-ab28-792e71f38e06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="194c5b20-70ed-5f52-1505-36f142da07cf" executionId="60c17a4e-4831-40d1-a73b-466a7ad8fe20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b09795f-d9a3-d1ee-dac5-b3241ef2a5fc" executionId="eb2c3305-37a0-4e6e-9598-18b2ecc44cb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="338eda75-a843-c70f-d463-ae2015c69138" executionId="64c3c24b-e866-421e-a74e-25c1b68e3661" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="13" executed="13" passed="12" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started
+Running all tests in /Users/sasitorn/Test TFL/TestTLF1/bin/Debug/net8.0/TestTLF1.dll
+   NUnit3TestExecutor discovered 13 of 13 NUnit test cases using Current Discovery mode, Non-Explicit run
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59609
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083266.891][WARNING]: FromSockAddr failed on netmask
+[1730083266.891][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59609.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59624
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083267.498][WARNING]: FromSockAddr failed on netmask
+[1730083267.498][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59624.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59649
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083268.084][WARNING]: FromSockAddr failed on netmask
+[1730083268.084][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59649.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59667
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083268.702][WARNING]: FromSockAddr failed on netmask
+[1730083268.702][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59667.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59691
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083269.312][WARNING]: FromSockAddr failed on netmask
+[1730083269.312][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59691.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59707
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083269.927][WARNING]: FromSockAddr failed on netmask
+[1730083269.927][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59707.
+Given I am on the TfL Journey Planner page
+Accepted cookies on the TfL Journey Planner page.
+Navigation to the TfL Journey Planner page completed.
+-&gt; done: NavigationSteps.GivenIAmOnTheTfLJourneyPlannerPage() (4.1s)
+When I click the "plan-journey-button" button
+Clicked the 'plan-journey-button' button.
+-&gt; done: ClickButtonSteps.WhenIClickTheButton("plan-journey-button") (0.0s)
+Then Validate the "InputFrom" is invalid with error
+Error message displayed for field 'InputFrom': The From field is required.
+Error icon displayed alongside message for field 'InputFrom'.
+-&gt; done: InputJourneySteps.ThenValidateTheIsInvalidWithError("InputFrom") (0.0s)
+Then Validate the "InputTo" is invalid with error
+Error message displayed for field 'InputTo': The To field is required.
+Error icon displayed alongside message for field 'InputTo'.
+-&gt; done: InputJourneySteps.ThenValidateTheIsInvalidWithError("InputTo") (0.0s)
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 59763
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083274.161][WARNING]: FromSockAddr failed on netmask
+[1730083274.161][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 59763.
+Given I am on the TfL Journey Planner page
+Accepted cookies on the TfL Journey Planner page.
+Navigation to the TfL Journey Planner page completed.
+-&gt; done: NavigationSteps.GivenIAmOnTheTfLJourneyPlannerPage() (2.4s)
+When I type "@#$@$@@$" in the "InputFrom" field
+Entered '@#$@$@@$' in the 'InputFrom' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("@#$@$@@$", "InputFrom") (1.0s)
+And I type "@#$#@$#@$$" in the "InputTo" field
+Entered '@#$#@$#@$$' in the 'InputTo' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("@#$#@$#@$$", "InputTo") (1.3s)
+When I click the "plan-journey-button" button
+Clicked the 'plan-journey-button' button.
+-&gt; done: ClickButtonSteps.WhenIClickTheButton("plan-journey-button") (0.5s)
+Then I should see the system fetching results displayed
+System fetching results displayed.
+Results fetching completed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheSystemFetchingResultsDisplayed() (10.6s)
+Then I should see an error indicating that the journey cannot be planned
+Correct error message displayed indicating that the journey cannot be planned.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeAnErrorIndicatingThatTheJourneyCannotBePlanned() (0.0s)
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 60085
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083290.089][WARNING]: FromSockAddr failed on netmask
+[1730083290.090][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 60085.
+Given I am on the TfL Journey Planner page
+Accepted cookies on the TfL Journey Planner page.
+Navigation to the TfL Journey Planner page completed.
+-&gt; done: NavigationSteps.GivenIAmOnTheTfLJourneyPlannerPage() (3.2s)
+When I type "Leicester Square" in the "InputFrom" field
+Entered 'Leicester Square' in the 'InputFrom' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("Leicester Square", "InputFrom") (2.0s)
+And I select "Leicester Square Underground Station" from the suggestions
+'Leicester Square Underground Station' successfully selected from suggestions.
+-&gt; done: AutocompleteSteps.WhenISelectFromTheSuggestions("Leicester Square ...") (1.2s)
+Then It should show "Leicester Square Underground Station" in the "InputFrom" field
+Correct value 'Leicester Square Underground Station' is displayed in the 'InputFrom' field.
+-&gt; done: InputJourneySteps.ThenItShouldShowInField("Leicester Square ...", "InputFrom") (0.0s)
+When I type "Covent Garden U" in the "InputTo" field
+Entered 'Covent Garden U' in the 'InputTo' field.
+-&gt; done: InputJourneySteps.WhenITypeInField("Covent Garden U", "InputTo") (1.9s)
+And I select "Covent Garden Underground Station" from the suggestions
+'Covent Garden Underground Station' successfully selected from suggestions.
+-&gt; done: AutocompleteSteps.WhenISelectFromTheSuggestions("Covent Garden Und...") (0.6s)
+Then It should show "Covent Garden Underground Station" in the "InputTo" field
+Correct value 'Covent Garden Underground Station' is displayed in the 'InputTo' field.
+-&gt; done: InputJourneySteps.ThenItShouldShowInField("Covent Garden Und...", "InputTo") (0.0s)
+When I click the "plan-journey-button" button
+Clicked the 'plan-journey-button' button.
+-&gt; done: ClickButtonSteps.WhenIClickTheButton("plan-journey-button") (0.5s)
+Then I should see the system fetching results displayed
+System fetching results displayed.
+Results fetching completed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheSystemFetchingResultsDisplayed() (17.8s)
+Then I should see the results for "Walking and cycling" displayed
+'Walking and cycling' results header is correctly displayed.
+Journey results for 'Walking and cycling' are successfully displayed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheResultsForDisplayed("Walking and cycling") (0.0s)
+Then I should see "Cycling" time "2" mins
+Correct Cycling time '2' is displayed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTimeMins("Cycling", "2") (0.0s)
+Then I should see "Walking" time "9" mins
+Correct Walking time '9' is displayed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTimeMins("Walking", "9") (0.0s)
+When I click the "Edit preferences" link
+Clicked the 'Edit preferences' button.
+-&gt; done: EditPreferencesSteps.WhenIClickTheLink("Edit preferences") (0.0s)
+And I select routes with least walking
+Label for 'Routes with least walking' is visible.
+Clicked the label for 'Routes with least walking' as a fallback.
+-&gt; done: EditPreferencesSteps.WhenISelectRoutesWithLeastWalking() (1.6s)
+And I update Journey
+Direct click on 'Update journey' button failed. Attempting tab navigation...
+Found the 'Update journey' button using Tab navigation.
+Clicked the 'Update journey' button using Tab navigation.
+-&gt; done: EditPreferencesSteps.WhenIUpdateJourney() (16.6s)
+Then I should see the system fetching results displayed
+System fetching results displayed.
+Results fetching completed.
+-&gt; done: JourneyResultsSteps.ThenIShouldSeeTheSystemFetchingResultsDisplayed() (18.3s)
+Then Validate the journey time "11" mins
+Total journey time displayed: Total time:
+20mins mins
+Mismatch in total journey time. Expected: '11' mins, but got: 'Total time:
+20mins' mins.
+-&gt; done: JourneyResultsSteps.ThenValidateTheJourneyTimeMins("11") (0.0s)
+When I click on "View details" button
+Clicked the 'View details' button.
+-&gt; done: ViewDetailsSteps.WhenIClickOnButton("View details") (0.0s)
+Then I should see access information for "Covent Garden Underground Station" including 'Up stairs, Up lift, Level walkway'
+-&gt; error: Timed out while verifying access information for 'Covent Garden Underground Station'. (20.6s)
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 60751
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083374.985][WARNING]: FromSockAddr failed on netmask
+[1730083374.985][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 60751.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 60796
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083375.860][WARNING]: FromSockAddr failed on netmask
+[1730083375.860][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 60796.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 60822
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083376.493][WARNING]: FromSockAddr failed on netmask
+[1730083376.493][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 60822.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 60844
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083377.071][WARNING]: FromSockAddr failed on netmask
+[1730083377.071][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 60844.
+Closed the Chrome browser after scenario execution.
+
+Starting ChromeDriver 130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}) on port 60872
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1730083377.690][WARNING]: FromSockAddr failed on netmask
+[1730083377.690][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully on port 60872.
+Closed the Chrome browser after scenario execution.
+
+NUnit Adapter 4.6.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
