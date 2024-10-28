@@ -37,6 +37,7 @@ Feature: TFL Functionality
 
   Scenario: Plan a journey using different modes 
   Scenario: Plan a journey using different preferences
+  Scenario: Plan a journey using different Leaving date and time
   Scenario: Plan a journey and verify the access options
   Scenario: Plan a journey between two stations that are extremely close to each other
   Scenario: Plan a journey using hire bike
