@@ -1,3 +1,4 @@
+
 # TfL Journey Planner Test Automation
 
 This repository contains automated tests for the **TfL Journey Planner** to ensure the functionality of journey planning, error handling, preferences updates, and more. The tests cover a range of scenarios, including valid journeys, invalid journeys, and edge cases like no input or unsupported locations.
@@ -68,6 +69,8 @@ TestTLF1/
 │   ├── TextContext.cs                    # Test context setup and initialization
 │   ├── ViewDetailSteps.cs                # Step definitions for viewing journey details
 │
+├──Test Reports						# Test reports container
+ |
 ├── .editorconfig                         # Code formatting settings
 ├── TestTLF1.csproj                       # .NET project file
 ├── TestTLF1.sln                          # Solution file for Visual Studio
@@ -91,44 +94,37 @@ Ensure you have the following installed before proceeding:
    ```bash
    git clone https://github.com/yourusername/tfl-journey-planner-tests.git
    cd tfl-journey-planner-tests
-
 2. **Clone the repository:**
-  ```bash
-  git clone https://github.com/yourusername/TestTLF1.git
-  cd TestTLF1```
-
+	  ```bash
+	  git clone https://github.com/yourusername/TestTLF1.git
+	  cd TestTLF1
 3. **Open the solution:**
-  ```bash    
-  Open TestTLF1.sln using Visual Studio or Visual Studio Code.
-
+	 ```bash    
+	  Open TestTLF1.sln using Visual Studio or Visual Studio Code.
 4. **Install NuGet packages:**
-
 Use Visual Studio's built-in NuGet Package Manager or run:
-```bash
-Copy code
-dotnet restore
-Set up WebDriver:```
+	```bash
+	dotnet restore
+Set up WebDriver:
 
 Ensure ChromeDriver (or another WebDriver) is in your system's PATH.
 Configuring WebDriver
 To switch browsers, update the WebDriver setup in TestContext or NavigationSteps.cs.
 Supported browsers: Chrome, Firefox, Edge.
 
-## Running Test
-1. **Open the solution in Visual Studio or Visual Studio Code.**
-2. **Build the solution:**
-  ```bash
-  dotnet build```
-3. **Run the tests using the Test Explorer in Visual Studio or from the command line:**
-  ```bash
-  dotnet test
-4. **You can also run specific test scenarios using the SpecFlow extension in Visual Studio.**
+## Running Tests
+ 1. **Open the solution in Visual Studio or Visual Studio Code.**
+ 2. **Build the solution:**
+	  ```bash
+	  dotnet build
+ 3. **Run the tests using the Test Explorer in Visual Studio or from the command line:**
+	 ```bash
+	   dotnet test
+ 4.  **You can also run specific test scenarios using the SpecFlow extension in Visual Studio.**
 
 ## Test Reports
-  Generate Test Reports Using dotnet test
-  When running tests via the command line, you can generate reports using the --logger option:
-  ```bash
-  dotnet test --logger "trx;LogFileName=TestResults.trx"
-
-This will create a TRX report (Test Run XML) in the project directory, usually saved in the TestResults folder.
-
+Generate Test Reports Using dotnet test
+When running tests via the command line, you can generate reports using the --logger option:
+*This will create a TRX report (Test Run XML) in the project directory, usually saved in the TestResults folder.
+```bash
+dotnet test --logger "trx;LogFileName=TestResults.trx
