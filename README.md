@@ -91,17 +91,13 @@ Ensure you have the following installed before proceeding:
 
 ## Configuration
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/tfl-journey-planner-tests.git
-   cd tfl-journey-planner-tests
-2. **Clone the repository:**
 	  ```bash
-	  git clone https://github.com/yourusername/TestTLF1.git
-	  cd TestTLF1
-3. **Open the solution:**
+	  git clone https://github.com/yourusername/TestTFL.git
+	  cd TestTFL
+2. **Open the solution:**
 	 ```bash    
 	  Open TestTLF1.sln using Visual Studio or Visual Studio Code.
-4. **Install NuGet packages:**
+3. **Install NuGet packages:**
 Use Visual Studio's built-in NuGet Package Manager or run:
 	```bash
 	dotnet restore
